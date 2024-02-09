@@ -20,6 +20,7 @@
 // Функциям всегда передаются корректные числа, проверки на NaN, Infinity делать не нужно.
 
 // Задание 1
+
 function numberToCube(number) {
   return number * number * number;
 }
