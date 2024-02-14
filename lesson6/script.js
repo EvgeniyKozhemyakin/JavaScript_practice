@@ -21,7 +21,7 @@
 
 // Задание 1
 
-function numberToCube(number) {
+let numberToCube = function (number) {
   return number * number * number;
 }
 
@@ -31,7 +31,7 @@ console.log(`2^3 степени + 3 ^ 3 степени = ${sumCub}`);
 
 // Задание 2
 
-function PercentageOfNumber(number, percent) {
+let percentageOfNumber = function (number, percent) {
   let percentNumber = ((100 - percent) / 100) * number;
   return percentNumber;
 }
@@ -42,13 +42,13 @@ let salary = Number(
 if (!Number.isFinite(salary)) {
   alert("Значение задано неверно");
 } else {
-  let salaryAfterTax = PercentageOfNumber(salary, 13);
+  let salaryAfterTax = percentageOfNumber(salary, 13);
   console.log(`Размер заработной платы за вычетом налогов = ${salaryAfterTax}`);
 }
 
 // Задание 3
 
-function MaxValue(num1, num2, num3) {
+let maxValue =function(num1, num2, num3) {
   let max = num1;
   if (num2 > max) max = num2;
   if (num3 > max) max = num3;
@@ -79,12 +79,12 @@ if (!Number.isFinite(numberThree)) {
 }
 
 console.log(
-  `Максимальное число = ${MaxValue(numberOne, numberTwo, numberThree)}`
+  `Максимальное число = ${maxValue(numberOne, numberTwo, numberThree)}`
 );
 
 // Задание 4
 
-function Diff(num1, num2) {
+let diff = function (num1, num2) {
   if (num1 > num2) return num1 - num2;
   return num2 - num1;
 }
